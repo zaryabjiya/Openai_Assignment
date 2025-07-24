@@ -2,15 +2,15 @@ import streamlit as st
 import asyncio
 
 from agents import Agent
-from health_wellness_agent.context import UserSessionContext
-from health_wellness_agent.tools.meal_planner import meal_planner
-from health_wellness_agent.tools.tracker import update_progress
-from health_wellness_agent.tools.goal_analyzer import analyze_goal
-from health_wellness_agent.tools.workout_recommender import recommend_workout
-from health_wellness_agent.tools.scheduler import schedule_checkins
-from health_wellness_agent.config import model
-from health_wellness_agent.utils.streaming import stream_agent_response  
-from health_wellness_agent.agent import TriageAgent
+from openai_assignment.context import UserSessionContext
+from openai_assignment.tools.meal_planner import meal_planner
+from openai_assignment.tools.tracker import update_progress
+from openai_assignment.tools.goal_analyzer import analyze_goal
+from openai_assignment.tools.workout_recommender import recommend_workout
+from openai_assignment.tools.scheduler import schedule_checkins
+from openai_assignment.config import model
+from openai_assignment.utils.streaming import stream_agent_response  
+from openai_assignment.agent import TriageAgent
 
 agent = Agent(
     name="health_wellness_agent",
